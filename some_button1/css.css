@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+body {
+    background-color: #000000;
+    }
+
+li {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    text-align: center;
+    margin: 0 10px;
+    left: 10px;
+}
+
+ul li::before,
+ul li::after {
+    content: '';
+    display: inline-block;
+    filter: blur(20px);
+    position: absolute;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 1s;
+    z-index: -1;
+}
+
+ul li::after {
+    filter: blur(40px);
+}
+
+ul li:hover:before,
+ul li:hover:after {
+    opacity: 1;
+}
+
+div {
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    
+}
+
+a {
+    color: #000000;
+    position: absolute;
+    font-size: 35px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+}
+
+i {
+    position: relative;
+    top: 27%;
+}
+
+li::after {
+    width: 100px;
+    height: 100px;
+    /* background-color: blueviolet; */
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    }
+
+ul li a i {
+    transition: .5s;
+    transform: rotateY(0deg) scale(0.8);
+    opacity: 1.2;
+}
+
+ul li a i:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+ul li:nth-child(1) a,
+ul li:nth-child(1)::after,
+ul li:nth-child(1)::before {
+    background: linear-gradient(45deg, #FF4500, #FFD700);
+}
+ul li:nth-child(2) a,
+ul li:nth-child(2)::after,
+ul li:nth-child(2)::before {
+    background: linear-gradient(45deg, #ADFF2F, #D2691E);
+}
+ul li:nth-child(3) a,
+ul li:nth-child(3)::after,
+ul li:nth-child(3)::before {
+    background: linear-gradient(45deg, 	#40E0D0, #8B008B);
+}
+ul li:nth-child(4) a,
+ul li:nth-child(4)::after,
+ul li:nth-child(4)::before {
+    background: linear-gradient(45deg, #DC143C, #FFE4B5);
+}
