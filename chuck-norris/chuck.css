@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+
+body{
+    background-color: rgb(46, 45, 45);
+    width: 100%;
+    height: 100%;
+}
+.modal{
+    position: absolute;
+    width: 764px;
+    height: 640px;
+    background-color: white;
+    top: 15%;
+    left: 20%;
+    display: inline-block;
+    justify-content: center;
+    
+}
+.jokes{
+    width: 40%;
+    height: 25%;
+    top: 7%;
+    left: 5%;
+    z-index: 2;
+    position: absolute;
+}
+#btn{
+    border: 1px solid gray;
+}
+#fir, #sec, #third{
+    position: absolute;
+}
